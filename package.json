@@ -4,6 +4,8 @@
   "description": "A simple json database with a similar syntax of the firestore database.",
   "main": "./dist/index.js",
   "scripts": {
+		"start": "node ./dist",
+		"compile": "tsc",
     "test": "jest"
   },
   "repository": {
