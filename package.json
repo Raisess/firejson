@@ -1,0 +1,30 @@
+{
+  "name": "firejson",
+  "version": "1.0.0",
+  "description": "A simple json database with a similar syntax of the firestore database.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raisess/firejson.git"
+  },
+  "keywords": [
+    "database",
+    "json",
+    "typescript",
+    "store"
+  ],
+  "author": "Raisess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raisess/firejson/issues"
+  },
+  "homepage": "https://github.com/Raisess/firejson#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "jest": "^26.1.0",
+    "typescript": "^3.9.6"
+  }
+}
