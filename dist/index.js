@@ -4,13 +4,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const get_1 = __importDefault(require("./get"));
+const set_1 = __importDefault(require("./set"));
 const db = (dbName) => {
     return {
         collection: (collectionName) => {
             return {
                 doc: (docName) => {
                     return {
-                        get: () => get_1.default(dbName, collectionName, docName)
+                        get: () => get_1.default(dbName, collectionName, docName),
+                        set: (data) => set_1.default(dbName, collectionName, docName, data)
                     };
                 }
             };
