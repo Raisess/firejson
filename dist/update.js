@@ -11,7 +11,7 @@ const update_ = (dbName, collectionName, docName, data) => {
         const doc = fs_1.default.readFileSync(docPath, 'utf8');
         const docData = JSON.parse(doc);
         const newData = Object.assign(data, docData);
-        const updatedDoc = fs_1.default.writeFileSync(docPath, newData, 'uf8');
+        const updatedDoc = fs_1.default.writeFileSync(docPath, JSON.stringify(newData), 'utf8');
         return true;
     }
     catch (e) {

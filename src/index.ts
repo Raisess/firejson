@@ -2,7 +2,7 @@ import get_ from './get';
 import set_ from './set';
 import update_ from './update';
 
-const db = (dbName: String) => {
+const fireJson = (dbName: String) => {
 	return {
 		collection: (collectionName: String) => {
 			return {
@@ -18,4 +18,4 @@ const db = (dbName: String) => {
 	};
 }
 
-export default db;
+export default fireJson;

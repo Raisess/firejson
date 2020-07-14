@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const get_1 = __importDefault(require("./get"));
 const set_1 = __importDefault(require("./set"));
 const update_1 = __importDefault(require("./update"));
-const db = (dbName) => {
+const fireJson = (dbName) => {
     return {
         collection: (collectionName) => {
             return {
@@ -21,4 +21,4 @@ const db = (dbName) => {
         }
     };
 };
-exports.default = db;
+exports.default = fireJson;
