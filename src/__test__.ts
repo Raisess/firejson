@@ -1,8 +1,7 @@
 import fireJson from './index';
 
 const db = fireJson('myDb');
-const ref: boolean = db.collection('myCollection')
-							.doc('myDoc')
-								.set({ foo: 'bar' });
+const ref: any = db.collection('myCollection').doc('myDoc');
 
-console.log(ref);
+console.log(ref.set({ foo: 'bar' }));
+console.log(ref.delete());

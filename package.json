@@ -29,7 +29,6 @@
     "@types/mkdirp": "^1.0.1",
     "@types/node": "^14.0.23",
     "jest": "^26.1.0",
-    "ts-jest": "^26.1.2",
     "typescript": "^3.9.6"
   },
   "dependencies": {
