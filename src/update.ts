@@ -6,6 +6,7 @@ const update_ = (dbName: String, collectionName: String, docName: String, data: 
 		// get file data
 		const docPath = `${path.dirname(__filename)}/databases/${dbName}/${collectionName}/${docName}.json`;
 		const doc = fs.readFileSync(docPath, 'utf8');
+		// parse the data to object
 		const docData = JSON.parse(doc);
 		// assign the new data to old file data object
 		const newData = Object.assign(data, docData);
@@ -13,8 +14,8 @@ const update_ = (dbName: String, collectionName: String, docName: String, data: 
 		const updatedDoc = fs.writeFileSync(docPath, JSON.stringify(newData), 'utf8');
 
 		return true;
-	} catch (e) {
-		console.error(e);
+	} catch (error) {
+		console.error(error);
 
 		return false;
 	}
