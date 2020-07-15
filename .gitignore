@@ -1,6 +1,4 @@
 /node_modules
 /src/test.ts
-/dist/test.js
 /src/databases
-/dist/databases
-
+/dist
