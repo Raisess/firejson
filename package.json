@@ -4,8 +4,8 @@
   "description": "A simple json database with a similar syntax of the firestore database.",
   "main": "./dist/index.js",
   "scripts": {
-		"start": "node ./dist",
-		"compile": "tsc",
+    "start": "node ./dist",
+    "compile": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -25,8 +25,12 @@
   },
   "homepage": "https://github.com/Raisess/firejson#readme",
   "devDependencies": {
+    "@types/mkdirp": "^1.0.1",
     "@types/node": "^14.0.23",
     "jest": "^26.1.0",
     "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "mkdirp": "^1.0.4"
   }
 }
